@@ -1,0 +1,30 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "devDependencies": {
+    "gulp": "latest"
+    ,"bower": "latest"
+    ,"gulp-nodemon": "latest"
+    ,"gulp-watch": "~0.6.4"
+    ,"gulp-jshint": "latest"
+    ,"forever": "latest"
+  },
+  "dependencies": {
+    "express": "~4.0.0"
+    ,"static-favicon": "~1.0.0"
+    ,"morgan": "~1.0.0"
+    ,"cookie-parser": "~1.0.1"
+    ,"body-parser": "~1.0.0"
+    ,"debug": "~0.7.4"
+    <% if(enginename == 'jade') { %>, "jade": "~1.3.0"<% } %>
+    <% if(enginename == 'ejs') { %>, "ejs": "~0.8.5"<% } %>
+    <% if(enginename == 'hjs') { %>, "hjs": "~0.0.6"<% } %>
+    <% if(styleengine == 'less') { %>, "less-middleware": "0.1.15"<% } %>
+    <% if(styleengine == 'stylus') { %>, "stylus": "0.42.3"<% } %>
+    <% if(styleengine == 'scss') { %>, "node-compass": "0.2.3"<% } %>
+  }
+}
