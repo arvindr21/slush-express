@@ -58,7 +58,7 @@ $ gulp
 
 ## MongoDB support
 
-If you are looking for an integration with MongoDB, check out [slush-monog](https://www.npmjs.org/package/slush-mongo) 
+If you are looking for an integration with MongoDB, check out [slush-mongo](https://www.npmjs.org/package/slush-mongo) 
 
 ## Getting To Know Slush
 
