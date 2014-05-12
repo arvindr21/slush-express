@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/slush-express.png?downloads=true&stars=true)](https://nodei.co/npm/slush-express/)
 
-> A slush generator to scaffold express apps
+> A slush generator to scaffold Express apps
 
 ## Getting Started
 
