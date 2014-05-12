@@ -56,6 +56,10 @@ To run the scaffolded app, execute
 $ gulp
 ```
 
+## MongoDB support
+
+If you are looking for an integration with MongoDB, check out [slush-monog](https://www.npmjs.org/package/slush-mongo) 
+
 ## Getting To Know Slush
 
 Slush is a tool that uses Gulp for project scaffolding.
