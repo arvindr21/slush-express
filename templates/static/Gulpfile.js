@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 //register nodemon task
 gulp.task('nodemon', function () {
-  nodemon({ script: './bin/www', env: { 'NODE_ENV': 'development' }, nodeArgs: ['--debug=9999']})
+  nodemon({ script: './bin/www', env: { 'NODE_ENV': 'development' }})
     .on('restart');
 });
 

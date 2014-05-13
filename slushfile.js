@@ -112,6 +112,11 @@ gulp.task('default', function (done) {
             }
 
             gulp.src(__dirname + '/templates/static/**')
+                .pipe(rename(function(file) {
+                            if (file.basename.indexOf('__') == 0) {
+                                file.basename = '.' + file.basename.slice(2);
+                            }
+                     }))
                 .pipe(conflict('./'))
                 .pipe(gulp.dest('./'));
 
