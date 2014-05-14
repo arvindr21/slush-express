@@ -1,7 +1,7 @@
 {
     "name": "slush-express",
     "description": "A slush generator to scaffold Express 4 apps, where you can pick from popular View and Stylesheet engines.",
-    "version": "0.2.4",
+    "version": "0.2.6",
     "homepage": "https://github.com/arvindr21/slush-express",
     "author": {
         "name": "Arvind Ravulavaru",

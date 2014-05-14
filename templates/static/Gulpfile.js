@@ -3,7 +3,9 @@
 var gulp = require('gulp'),
   nodemon = require('gulp-nodemon'),
   watch = require('gulp-watch'),
-  jshint = require('gulp-jshint');
+  jshint = require('gulp-jshint'),
+  livereload = require('gulp-livereload');
+
 
 //register nodemon task
 gulp.task('nodemon', function () {
@@ -13,10 +15,15 @@ gulp.task('nodemon', function () {
 
 // Rerun the task when a file changes
 gulp.task('watch', function() {
+    var server = livereload();
     gulp.src(['*.js','routes/*.js', 'public/*.js'], { read: true })
         .pipe(watch({ emit: 'all' }))
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
+
+    gulp.watch(['*.js','routes/*.js', 'views/**/*.*', 'public/**/*.*']).on('change', function(file) {
+      server.changed(file.path);
+  });
 });
 
 //lint js files

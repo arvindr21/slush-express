@@ -10,8 +10,8 @@
     ,"bower": "latest"
     ,"gulp-nodemon": "latest"
     ,"gulp-watch": "~0.6.4"
-    ,"gulp-jshint": "latest"
-    ,"forever": "latest"
+    ,"gulp-jshint": "latest",
+    "gulp-livereload": "^1.5.0"
   },
   "dependencies": {
     "express": "~4.0.0"
