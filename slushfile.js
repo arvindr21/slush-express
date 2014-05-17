@@ -30,6 +30,10 @@ gulp.task('default', function (done) {
           }, {
             name: "Hogan",
             value: "hjs"
+          },
+          {
+            name: "HTML",
+            value: "html"
           }
 
         ],
@@ -107,6 +111,13 @@ gulp.task('default', function (done) {
             if(answers.styleengine == 'scss')
             {
                 gulp.src(__dirname + '/templates/scss/**')
+                    .pipe(conflict('./'))
+                    .pipe(gulp.dest('./'));
+            }
+
+            if(answers.enginename == 'html')
+            {
+                gulp.src(__dirname + '/templates/html/**')
                     .pipe(conflict('./'))
                     .pipe(gulp.dest('./'));
             }

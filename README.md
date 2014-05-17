@@ -12,6 +12,7 @@ View Engines
 * Jade
 * Ejs
 * Hogan
+* HTML
 
 Style Sheet Engines
 * CSS

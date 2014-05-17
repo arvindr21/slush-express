@@ -23,6 +23,7 @@
     <% if(enginename == 'jade') { %>, "jade": "~1.3.0"<% } %>
     <% if(enginename == 'ejs') { %>, "ejs": "~0.8.5"<% } %>
     <% if(enginename == 'hjs') { %>, "hjs": "~0.0.6"<% } %>
+    <% if(enginename == 'html') { %>, "ejs": "~0.8.5"<% } %>
     <% if(styleengine == 'less') { %>, "less-middleware": "0.1.15"<% } %>
     <% if(styleengine == 'stylus') { %>, "stylus": "0.42.3"<% } %>
     <% if(styleengine == 'scss') { %>, "node-compass": "0.2.3"<% } %>

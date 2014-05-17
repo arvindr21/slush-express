@@ -13,7 +13,8 @@ var users = require('./routes/users');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));<% if(enginename == 'html') {%>
+app.engine('html', require('ejs').renderFile);<% } %>
 app.set('view engine', '<%= enginename %>');
 
 app.use(favicon());
